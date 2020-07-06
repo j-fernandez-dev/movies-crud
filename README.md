@@ -45,9 +45,9 @@ $ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Aut
 
 $ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies | jq
 
-## Crear una película
+## Crear película
 
-$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST -d '{ "title":"Darkman", "genre":"Acción", "director":"El vecino", "year":1990, "minutes":128 }' http://localhost:8000/api/movies | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST -d '{ "title":"Darkman", "genre":"Acción", "director":"Sam Raimi", "year":1990, "minutes":128 }' http://localhost:8000/api/movies | jq
 
 ## Obtener película
 
@@ -55,7 +55,7 @@ $ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Aut
 
 ## Actualizar película
 
-$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X PUT -d '{ "title":"Enter the dragon", "minutes":99 }' http://localhost:8000/api/movies/<id> | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X PUT -d '{ "title":"Darkman 1", "minutes":112 }' http://localhost:8000/api/movies/<id> | jq
 
 ## Eliminar película
 
@@ -71,7 +71,7 @@ Es posible subir un archivo con el siguiente formato:
 
 \<title\>;\<genre\>;\<director\>;\<year\>;\<minutes\>
 
-En el directorio principal se encuentra el archivo movies-cruc.csv como ejemplo:
+En el directorio raíz se encuentra el archivo movies-crud.csv como ejemplo:
 
 The lord of the rings;Action;Peter Jackson;2001;178\
 Enter the dragon;Action;Robert Clouse;1973;102\
