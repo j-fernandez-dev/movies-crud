@@ -13,7 +13,7 @@ $ cd movies-crud
 - Instalar dependencias\
 $ composer install
 
-- Editar archivo .env para configurar la base de datos creada\
+- Editar archivo .env para configurar la base de datos creada
 
 - Realizar la migración\
 $ php artisan migrate
@@ -27,43 +27,43 @@ $ php artisan serve
 
 ## Login
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{ "email":"\<email\>", "password":"\<password\>" }' http://localhost:8000/api/auth/login | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{ "email":"\<email\>", "password":"\<password\>" }' http://localhost:8000/api/auth/login | jq
 
 ## Perfil
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST http://localhost:8000/api/auth/me | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST http://localhost:8000/api/auth/me | jq
 
 ## Refresh token
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST http://localhost:8000/api/auth/refresh | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST http://localhost:8000/api/auth/refresh | jq
 
 ## Logout
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST http://localhost:8000/api/auth/logout | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST http://localhost:8000/api/auth/logout | jq
 
 ## Obtener películas
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies | jq
 
 ## Crear una película
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST -d '{ "title":"Darkman", "genre":"Acción", "director":"El vecino", "year":1990, "minutes":128 }' http://localhost:8000/api/movies | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X POST -d '{ "title":"Darkman", "genre":"Acción", "director":"El vecino", "year":1990, "minutes":128 }' http://localhost:8000/api/movies | jq
 
 ## Obtener película
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies/<id> | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies/<id> | jq
 
 ## Actualizar película
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X PUT -d '{ "title":"Enter the dragon", "minutes":99 }' http://localhost:8000/api/movies/<id> | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X PUT -d '{ "title":"Enter the dragon", "minutes":99 }' http://localhost:8000/api/movies/<id> | jq
 
 ## Eliminar película
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X DELETE http://localhost:8000/api/movies/<id> | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X DELETE http://localhost:8000/api/movies/<id> | jq
 
 ## Subir archivo
 
-curl -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -F "file=@movies-crud.csv;type=text/csv" http://localhost:8000/api/movies/upload | jq
+$ curl -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -F "file=@movies-crud.csv;type=text/csv" http://localhost:8000/api/movies/upload | jq
 
 # Archivo CSV
 
