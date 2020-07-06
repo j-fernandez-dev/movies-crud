@@ -1,24 +1,24 @@
 ## Instalación
 
-Clonar el repositorio
+- Clonar el repositorio\
 $ git clone https://github.com/j-fernandez-dev/movies-crud.git
 
-Crear una base de datos
+- Crear una base de datos\
 $ mysql -h localhost -u <usuario> -p
 >> create database <db>;
 
-- Entrar al directorio
+- Entrar al directorio\
 $ cd movies-crud
 
-- Instalar dependencias
+- Instalar dependencias\
 $ composer install
 
-- Editar archivo .env para configurar la base de datos creada
+- Editar archivo .env para configurar la base de datos creada\
 
-- Realizar la migración
+- Realizar la migración\
 $ php artisan migrate
 
-- Ejecutar la aplicación
+- Ejecutar la aplicación\
 $ php artisan serve
 
 - Dirigirse a http://localhost:8000
