@@ -51,7 +51,7 @@ $ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Aut
 
 ## Obtener película
 
-$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies/\\\<id> | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X GET http://localhost:8000/api/movies/1 | jq
 
 ## Actualizar película
 
@@ -59,7 +59,7 @@ $ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Aut
 
 ## Eliminar película
 
-$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X DELETE http://localhost:8000/api/movies/\<id\> | jq
+$ curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -X DELETE http://localhost:8000/api/movies/1 | jq
 
 ## Subir archivo
 
