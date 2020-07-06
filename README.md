@@ -1,9 +1,9 @@
 ## Instalación
 
-- Clonar el repositorio
-\$ git clone https://github.com/j-fernandez-dev/movies-crud.git
+1. Clonar el repositorio
+$ git clone https://github.com/j-fernandez-dev/movies-crud.git
 
-- Crear una base de datos
+2. Crear una base de datos
 $ mysql -h localhost -u <usuario> -p
 > create database <db>;
 
