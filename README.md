@@ -67,11 +67,11 @@ $ curl -H "Accept: application/json" -H "Authorization: Bearer \<token\>" -F "fi
 
 # Archivo CSV
 
-Es posible subir un archivo con el siguiente formato:
+Es posible subir un archivo CSV con el siguiente formato:
 
 \<title\>;\<genre\>;\<director\>;\<year\>;\<minutes\>
 
-En el directorio raíz se encuentra el archivo movies-crud.csv como ejemplo:
+En el directorio raíz de la aplicación se encuentra el archivo movies-crud.csv como ejemplo:
 
 The lord of the rings;Action;Peter Jackson;2001;178\
 Enter the dragon;Action;Robert Clouse;1973;102\
