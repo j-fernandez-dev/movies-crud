@@ -1,11 +1,11 @@
 ## Instalación
 
-1. Clonar el repositorio
+Clonar el repositorio
 $ git clone https://github.com/j-fernandez-dev/movies-crud.git
 
-2. Crear una base de datos
+Crear una base de datos
 $ mysql -h localhost -u <usuario> -p
-> create database <db>;
+>> create database <db>;
 
 - Entrar al directorio
 $ cd movies-crud
